@@ -62,7 +62,7 @@ public class Tree {
         return false;
     }
 
-    public void remove(Node node) {
+    public void remove(Node node) { // TODO is leaf chyba
     }
 
     public List<Node> getListOfLeafs() {
@@ -93,4 +93,26 @@ public class Tree {
     public int getHeight() {
         return -1;
     } //
+
+    public Node getParrent(Node node){
+        if (node==root){
+            return null;
+        }
+        Node akt= root;
+        if (akt.getLeft()==node){
+
+        }
+        while(akt!=null){
+            if (akt.getLeft()==node){
+                return akt;
+            }
+            if (akt.getRight()==node){
+                return akt;
+            }
+
+
+        }
+
+        return null;
+    }
 }
