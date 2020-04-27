@@ -198,11 +198,11 @@ public class Tree {
     public Node getMinRightNode(Node node) {
         if (node.isLeaf())
             return null;
-
         if (node.getRight() == null)
             return null;
+
         Node akt = node.getRight();
-        for (; ; ) {
+        for (;;) {
             if (akt.getLeft() == null)
                 return akt;
             else

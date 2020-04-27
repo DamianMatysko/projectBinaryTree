@@ -47,7 +47,7 @@ public class Node {
         if (this.key == node.key) {
             this.value = node.value;
         } else if (this.key > node.key) {
-            if (this.left == null)
+            if (this.left == null)//pojde dolava
                 left = node;
             else
                 left.addChild(node);
